@@ -1,5 +1,4 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import App from "../App";
 
 export const AppRouter = () => {
@@ -7,6 +6,7 @@ export const AppRouter = () => {
     <>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
