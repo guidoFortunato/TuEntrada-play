@@ -1,10 +1,14 @@
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <h1>TuEntrada play</h1>
-    </div>
-  )
+    <>
+      <Navbar />
+      <div className="container-fluid">
+        <h1>TuEntrada play</h1>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;

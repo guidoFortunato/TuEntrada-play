@@ -1,0 +1,12 @@
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .img-container {
+    width: auto;
+    display: block;
+  }
+}
